@@ -5,6 +5,8 @@ Senior Data Scientist | Mechanical Engineer | PMP
 
 Professional certifications in machine learning, data science, project management, and engineering.
 
+[![Portfolio](https://img.shields.io/badge/View-Portfolio-green?style=flat-square)](https://github.com/albertodiazdurana/data-science-portfolio) [![Certifications](https://img.shields.io/badge/View-Certifications-blue?style=flat-square)](https://github.com/albertodiazdurana/Certificates)
+
 ## Certifications
 
 ### Machine Learning & Data Science
