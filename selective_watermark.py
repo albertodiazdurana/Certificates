@@ -79,20 +79,15 @@ def add_watermark_to_pdf(input_pdf, output_pdf, watermark_text="Alberto Diaz-Dur
         return False, 0
 
 
-# ===== CONFIGURE WHICH FILES TO WATERMARK =====
-# Edit this list - add or remove filenames as needed
-files_to_watermark = [
-    # Add more files here...
-    # "On_Strategy_What_Managers_can_Learn_from_Philosophy_Part_1_Certificate_Diaz-Durana.pdf",
-]
-exclude = []
-files_to_watermark = [f for f in os.listdir(".") 
-                      if f.endswith("_Diaz-Durana.pdf") and f not in exclude]
-
-
-# Output directory for watermarked files
+# ===== AUTOMATICALLY FIND FILES TO WATERMARK =====
+# Process all PDFs in original/ that don't exist in watermarked/
+original_dir = "./original"
 output_dir = "./watermarked"
 os.makedirs(output_dir, exist_ok=True)
+
+original_files = set(f for f in os.listdir(original_dir) if f.endswith(".pdf"))
+watermarked_files = set(f for f in os.listdir(output_dir) if f.endswith(".pdf"))
+files_to_watermark = [os.path.join(original_dir, f) for f in original_files - watermarked_files]
 
 print("="*70)
 print(f"Watermarking {len(files_to_watermark)} selected file(s)")
@@ -102,11 +97,12 @@ print()
 processed = 0
 skipped = 0
 
-for filename in files_to_watermark:
-    if os.path.exists(filename):
-        print(f"Processing: {filename}")
+for filepath in files_to_watermark:
+    if os.path.exists(filepath):
+        print(f"Processing: {filepath}")
+        filename = os.path.basename(filepath)
         output_path = os.path.join(output_dir, filename)
-        success, pages = add_watermark_to_pdf(filename, output_path)
+        success, pages = add_watermark_to_pdf(filepath, output_path)
         if success:
             print(f"  ✓ Success ({pages} page(s))\n")
             processed += 1
@@ -114,7 +110,7 @@ for filename in files_to_watermark:
             print(f"  ✗ Failed\n")
             skipped += 1
     else:
-        print(f"✗ Not found: {filename}\n")
+        print(f"✗ Not found: {filepath}\n")
         skipped += 1
 
 print("="*70)
