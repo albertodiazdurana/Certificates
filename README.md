@@ -21,7 +21,7 @@ Professional certifications in machine learning, data science, project managemen
 - **[Engineering Degree](./watermarked/University_Diaz-Durana.pdf)** - Mechanical Engineering, Universidad de Los Andes (2008)
 
 ### Professional Development
-- **[Work Experience Certificates](./watermarked/Work_Certificates_Diaz-Durana.pdf)** - Multiple employers
+- **[Work Experience Certificates](./watermarked/Work_Certificates2025_Diaz-Durana.pdf)** - Multiple employers
 - **[On Strategy: What Managers Can Learn from Philosophy](./watermarked/On_Strategy_What_Managers_can_Learn_from_Philosophy_Part_1_Certificate_Diaz-Durana.pdf)** (2018)
 
 ## Repository Structure
