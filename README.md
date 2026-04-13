@@ -1,13 +1,14 @@
-# 📜 Professional Certifications
+# Professional Certifications
 
-**Alberto Diaz Durana**  
-Senior Data Scientist | Mechanical Engineer | PMP
+**Alberto Diaz Durana**
+Senior Data Scientist | AI Engineer | PMP
 
-Professional certifications in machine learning, data science, project management, and engineering.
+Professional certifications in AI, machine learning, data science, project management, and engineering.
 
 ## Certifications
 
-### Machine Learning & Data Science
+### AI & Data Science
+- **[AI Data Science Specialization](./watermarked/MasterSchool_Diaz-Durana_DE-KI-Data-Science.pdf)** - Masterschool / MSIT GmbH (2026), 1,400 hours, AZAV-certified
 - **[MLOps Specialization](./watermarked/MLOps_Certificate_Diaz-Durana.pdf)** - DeepLearning.AI (2024)
 - **[Advanced Programming with Python for Data Analysis](./watermarked/Advanced_Programing_Data_Analysis_Python_Certificate_Diaz-Durana.pdf)** - future Training & Consulting (2018)
 
