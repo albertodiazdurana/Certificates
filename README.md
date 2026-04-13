@@ -1,7 +1,7 @@
 # Professional Certifications
 
 **Alberto Diaz Durana**
-Senior Data Scientist | AI Engineer | PMP
+Senior Data Scientist | AI Product Architect | Creator of [Take AI Bite](https://take-ai-bite.com/about/)
 
 Professional certifications in AI, machine learning, data science, project management, and engineering.
 
